@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "id": "2",
+      "name": "laptops",
+      "display_name": "laptops",
+      "description": "category to let you buy anything for your laptop"
+    },
+    {
+      "id": "1",
+      "name": "cars",
+      "display_name": "cars",
+      "description": "category to let you buy anything for your car"
+    }
+  ],
+  "products": [
+    {
+      "id": "1",
+      "name": "Car Charger USB",
+      "category": "cars",
+      "display_name": "Car Charger Waterproof Dual USB",
+      "description": "USB that can be used in the car to charge your mobile"
+    },
+    {
+      "id": "2",
+      "name": "Car Tire Pressure Sensor",
+      "category": "cars",
+      "display_name": "Car Tire Pressure Sensor",
+      "description": "Tire Pressure monitoring system"
+    }
+  ]
+}
