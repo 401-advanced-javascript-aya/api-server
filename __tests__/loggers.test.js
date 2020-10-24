@@ -17,8 +17,6 @@ describe('logger middleware', () => {
   });
   it('log the output correctly', () => {
     logger(req, res, next);
-
-    console.log('hiiiiii');
     expect(consoleSpy).toHaveBeenCalled();
   });
   it('move to the next middleware', () => {
