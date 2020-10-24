@@ -22,7 +22,7 @@ describe('api server', () => {
     return mockRequest.post('/products').then((results) => {
       expect(results.status).toBe(201);
     });
-});
+  });
   it('should respond with 200 on a correct route', () => {
     return mockRequest.get('/products').then((results) => {
       expect(results.status).toBe(200);
@@ -33,17 +33,17 @@ describe('api server', () => {
       expect(results.status).toBe(200);
     });
   });
- 
-it('should respond with 201 for post', () => {
+
+  it('should respond with 201 for post', () => {
     return mockRequest.delete('/products/:id').then((results) => {
       expect(results.status).toBe(200);
     });
-});
-it('should respond with 201 for post', () => {
+  });
+  it('should respond with 201 for post', () => {
     return mockRequest.post('/categories').then((results) => {
       expect(results.status).toBe(201);
     });
-});
+  });
   it('should respond with 200 on a correct route', () => {
     return mockRequest.get('/categories').then((results) => {
       expect(results.status).toBe(200);
@@ -54,10 +54,10 @@ it('should respond with 201 for post', () => {
       expect(results.status).toBe(200);
     });
   });
- 
-it('should respond with 201 for post', () => {
+
+  it('should respond with 201 for post', () => {
     return mockRequest.delete('/categories/:id').then((results) => {
       expect(results.status).toBe(200);
     });
-});
+  });
 });

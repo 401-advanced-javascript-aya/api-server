@@ -25,11 +25,22 @@ router.get('/categories', (req, res, next) => {
 });
 router.put('/categories/:id', (req, res, next) => {
   categoriesModle
-    .get(req.params.id,req.body)
+    .update(req.params.id,req.body)
     .then((data) => {
       let count = data.length;
       let results = data;
-      res.status(200).json({ count, results });
+      res.status(200).json({ count , results });
+    })
+    .catch(next);
+});
+
+router.patch('/categories/:id', (req, res, next) => {
+  categoriesModle
+    .update(req.params.id,req.body)
+    .then((data) => {
+      let count = data.length;
+      let results = data;
+      res.status(200).json({ count , results });
     })
     .catch(next);
 });
