@@ -8,6 +8,7 @@
     "lib": "lib"
   },
   "scripts": {
+    "lint": "eslint '**/*.js'",
     "start": "node index.js",
     "dev": "nodemon index.js",
     "test": "jest --coverage --verbose"
@@ -24,12 +25,20 @@
   },
   "homepage": "https://github.com/401-advanced-javascript-aya/api-server#readme",
   "dependencies": {
+    "@code-fellows/supergoose": "^1.0.11",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
+    "morgan": "^1.10.0",
     "supertest": "^5.0.0"
   },
   "devDependencies": {
-    "jest": "^26.5.3"
+    "eslint": "^7.11.0",
+    "eslint-config-standard": "^15.0.0",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.2",
+    "jest": "^26.6.1"
   }
 }
