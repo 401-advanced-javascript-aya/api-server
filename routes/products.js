@@ -1,7 +1,9 @@
 'use strict';
 const express = require('express');
-const productsModle = require('../lib/models/products/products-collection');
+const Products = require('../lib/models/products/products-collection');
 const router = express.Router();
+const productsModle = new Products();
+
 
 router.post('/products', (req, res, next) => {
   productsModle.create(req.body).then((data) => {

@@ -1,7 +1,8 @@
 'use strict';
 const express = require('express');
-const categoriesModle = require('../lib/models/categories/categories-collection');
+const Catigory = require('../lib/models/categories/categories-collection');
 const router = express.Router();
+const categoriesModle = new Catigory;
 
 router.post('/categories', (req, res, next) => {
   categoriesModle.create(req.body).then((data) => {
